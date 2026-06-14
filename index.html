@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpha Hosting | Minecraft Server Hosting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0a0f1f;
+    --card:#141d33;
+    --accent:#33ff88;
+    --accent2:#00d4ff;
+    --text:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    backdrop-filter:blur(10px);
+    background:rgba(10,15,31,.8);
+    z-index:1000;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    font-family:'Press Start 2P';
+    color:var(--accent);
+    font-size:14px;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+    radial-gradient(circle at top,var(--accent2),transparent 35%),
+    var(--bg);
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    opacity:.9;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--accent);
+    color:black;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:16px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    color:var(--accent);
+    margin-bottom:10px;
+}
+
+.plan{
+    background:var(--card);
+    text-align:center;
+    padding:35px;
+    border-radius:16px;
+}
+
+.price{
+    color:var(--accent);
+    font-size:3rem;
+    margin:15px 0;
+}
+
+.plan ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.plan li{
+    margin:10px 0;
+}
+
+.faq-item{
+    background:var(--card);
+    margin-bottom:15px;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.faq-question{
+    padding:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:.3s;
+    padding:0 20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.phone{
+    font-size:2rem;
+    color:var(--accent);
+    margin:20px 0;
+}
+
+.clock{
+    color:var(--accent2);
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050811;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">ALPHA HOSTING</div>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Minecraft Server Hosting</h1>
+
+<p>
+Affordable hosting for survival servers, friend groups,
+plugins, and Bedrock support.
+</p>
+
+<a href="#pricing" class="btn">View Plans</a>
+
+<div class="clock" id="clock"></div>
+
+</div>
+</section>
+
+<section id="features" class="section">
+
+<h2 class="section-title">Why Choose Alpha Hosting?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>⚡ Fast Setup</h3>
+<p>Your server can be online quickly.</p>
+</div>
+
+<div class="card">
+<h3>🛠 Plugin Support</h3>
+<p>PaperMC, EssentialsX, LuckPerms, Geyser, and more.</p>
+</div>
+
+<div class="card">
+<h3>🌎 Java + Bedrock</h3>
+<p>Play together with Geyser support.</p>
+</div>
+
+<div class="card">
+<h3>📦 Backups</h3>
+<p>Regular backups help protect your world.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing" class="section">
+
+<h2 class="section-title">Pricing</h2>
+
+<div class="grid">
+
+<div class="plan">
+<h3>Starter</h3>
+<div class="price">$2</div>
+
+<ul>
+<li>1 GB RAM</li>
+<li>10 Players</li>
+<li>PaperMC</li>
+<li>Basic Support</li>
+</ul>
+
+<a href="#contact" class="btn">Order</a>
+</div>
+
+<div class="plan">
+<h3>Standard</h3>
+<div class="price">$4</div>
+
+<ul>
+<li>2 GB RAM</li>
+<li>25 Players</li>
+<li>Plugins</li>
+<li>Backups</li>
+</ul>
+
+<a href="#contact" class="btn">Order</a>
+</div>
+
+<div class="plan">
+<h3>Premium</h3>
+<div class="price">$8</div>
+
+<ul>
+<li>4 GB RAM</li>
+<li>50 Players</li>
+<li>Plugins</li>
+<li>Bedrock Support</li>
+</ul>
+
+<a href="#contact" class="btn">Order</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="faq" class="section">
+
+<h2 class="section-title">FAQ</h2>
+
+<div class="faq-item">
+<div class="faq-question">Do you support plugins?</div>
+<div class="faq-answer">
+<p>Yes. PaperMC plugins are supported.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Can Bedrock players join?</div>
+<div class="faq-answer">
+<p>Yes, through Geyser compatibility.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do I get backups?</div>
+<div class="faq-answer">
+<p>Yes. Backup options are available.</p>
+</div>
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Call or text to get started.</p>
+
+<div class="phone">
+📞 623-499-6007
+</div>
+
+<a class="btn" href="tel:6234996007">
+Call Now
+</a>
+
+</section>
+
+<footer>
+© 2026 Alpha Hosting
+</footer>
+
+<script>
+const faqQuestions =
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question => {
+
+question.addEventListener("click", () => {
+
+const answer =
+question.nextElementSibling;
+
+if(answer.style.maxHeight){
+answer.style.maxHeight = null;
+}
+else{
+answer.style.maxHeight =
+answer.scrollHeight + "px";
+}
+
+});
+
+});
+
+function updateClock(){
+
+const now = new Date();
+
+document.getElementById("clock").innerHTML =
+"Local Time: " +
+now.toLocaleTimeString();
+
+}
+
+setInterval(updateClock,1000);
+updateClock();
+</script>
+
+</body>
+</html>
